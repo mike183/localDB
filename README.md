@@ -166,10 +166,10 @@ Just like updating and deleting, there are 2 methods at your disposal for findin
 The find() method has 5 parameters, from left to right they are as follows: **table_name**, **where**, **limit**, **offset**, **type**. I will explain these parameters a little more below:
 
 *table_name* - Simple, it's the name of the table that you want to search in  
-*where* - An object containing the where criteria, check below for an example  
-*limit* - The maximum number of items you want to be returned  
-*offset* - The offset of the returned results  
-*type* - This is the type of search you want to run. Possible values are AND and OR. If omitted this defaults to AND.
+*where (optional)* - An object containing the where criteria, check below for an example. If omitted, the search will match all rows  
+*limit (optional)* - The maximum number of items you want to be returned  
+*offset (optional)* - The offset of the returned results  
+*type (optional)* - This is the type of search you want to run. Possible values are AND and OR. If omitted this defaults to AND.
 
 The code for finding some data in the database using the find() method would look something like this:
 
