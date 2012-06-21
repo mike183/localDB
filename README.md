@@ -1,6 +1,6 @@
 #localDB - A Simple localStorage Database
 
-localDB and this manual are still under development therefore there could still be typing errors and/or bugs in either the code or in this manual, if you find any error/bugs or just have any questions please feel free to let me know and I will do my best to help :)
+localDB and this manual are still under development therefore there could still be typing errors and/or bugs in either the code or in this manual, if you find any error/bugs, have any questions or even have any feature requests please feel free to let me know and I will do my best to help :)
 
 ##Table of Contents:
 
