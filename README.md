@@ -14,7 +14,7 @@ localDB and this manual are still under development therefore there could still 
 * [Getting Table Meta Data](#getting-table-meta-data)
 * [Inserting Data](#inserting-data)
 * [Updating Data](#updating-data)
-* [Deleting Data](#deleting-data)
+* [Removing Data](#removing-data)
 * [Finding Data](#finding-data)
 * [Checking a Database Exists](#checking-a-database-exists)
 * [Checking a Table Exists](#checking-a-table-exists)
@@ -134,25 +134,25 @@ The updateById() method also has 3 parameters, going from first to last they are
 *Success:* true  
 *Error:* false with error message (console)
 
-<h2 id="deleting">Deleting Data</h2>
-Similar to updating above, there are 2 methods for deleting data in localDB. These methods are **delete()** and **deleteById()**. 
+<h2 id="removing">Removing Data</h2>
+Similar to updating above, there are 2 methods for removing data in localDB. These methods are **remove()** and **removeById()**. 
 
-***delete(table_name, where_object)***
+***remove(table_name, where_object)***
 
-The delete() method has 2 parameters, the first one being **table** and the second being **where**. The code for deleting some data from the database using the delete() method would look something like this:
+The remove() method has 2 parameters, the first one being **table** and the second being **where**. The code for removing some data from the database using the remove() method would look something like this:
 
-`db.delete('users', {'username': 'smithy576'});`
+`db.remove('users', {'username': 'smithy576'});`
 
 **Returns:**  
 *Success:* true  
 *Error:* false with error message (console)  
 &nbsp;
 
-***deleteById(table_name, id)***
+***removeById(table_name, id)***
 
-The deleteById() method also has 2 parameters, the first one being **table** and the second one being **id**. This function is only really any use when you know the ID of the row you are trying to delete. The code for deleting some data using the deleteById() method would look something like this:
+The removeById() method also has 2 parameters, the first one being **table** and the second one being **id**. This function is only really any use when you know the ID of the row you are trying to remove. The code for removing some data using the removeById() method would look something like this:
 
-`db.deleteById('users', 1);`
+`db.removeById('users', 1);`
 
 **Returns:**  
 *Success:* true  
