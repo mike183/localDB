@@ -230,17 +230,17 @@ You can use the tableExists() method to check if a certain table already exists 
 *Error:* false
 
 <h2 id="exporting">Exporting Data</h2>
-localDB allows you to export either the whole database or a certain table from the database using the export() method. The export() method has 1 parameter which is **table** and it is optional. If the table parameter is supplied the required table will be exported as a JSON string from the currently loaded database otherwise if the parameter is omitted the entire currently loaded database will be exported as a JSON string.
+localDB allows you to export either the whole database or a certain table from the database using the exportData() method. The exportData() method has 1 parameter which is **table** and it is optional. If the table parameter is supplied the required table will be exported as a JSON string from the currently loaded database otherwise if the parameter is omitted the entire currently loaded database will be exported as a JSON string.
 
-`var json = db.export('table_name');`
+`var json = db.exportData('table_name');`
 
 **Example 1:**
 
-`var database = db.export();`
+`var database = db.exportData();`
 
 **Example 2:**
 
-`var table = db.export('users');`
+`var table = db.exportData('users');`
 
 **Returns:**  
 *Success:* JSON  
