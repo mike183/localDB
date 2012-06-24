@@ -37,7 +37,7 @@ function localdb(db)
         };
         save(database);
       } else {
-        console.log('A table with the name "'+table+'" already exists');
+        console.error('A table with the name "'+table+'" already exists');
         return false;
       }
       
@@ -52,7 +52,7 @@ function localdb(db)
         delete database[table];
         save(database);
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -70,7 +70,7 @@ function localdb(db)
         };
         return meta;
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -126,7 +126,7 @@ function localdb(db)
           }
         }
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -143,7 +143,7 @@ function localdb(db)
         }
         save(database);
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -178,7 +178,7 @@ function localdb(db)
           }
         }
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -194,11 +194,11 @@ function localdb(db)
           delete database[table].rows[id];
           save(database);
         } else {
-          console.log('The specified row could not be found');
+          console.error('The specified row could not be found');
           return false;
         }
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -275,7 +275,7 @@ function localdb(db)
           return results;
         }
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -290,11 +290,11 @@ function localdb(db)
         if(database[table].rows[id] !== undefined){
           return database[table].rows[id];
         } else {
-          console.log('The requested record could not be found');
+          console.error('The requested record could not be found');
           return false;
         }
       } else {
-        console.log('A table with the name "'+table+'" could not be found');
+        console.error('A table with the name "'+table+'" could not be found');
         return false;
       }
       
@@ -335,7 +335,7 @@ function localdb(db)
         if(database[table] !== undefined){
           return JSON.stringify(database[table]);
         } else {
-          console.log('Table not found');
+          console.error('Table not found');
           return false;
         }
       } else {
