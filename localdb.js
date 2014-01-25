@@ -2,7 +2,7 @@
   localDB © 2012 Michael Donaldson
   Simple localStorage Database
   
-  License: Creative Commons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0/)
+  License: MIT (http://opensource.org/licenses/MIT)
 */
 
 function localdb(db)
