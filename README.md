@@ -67,8 +67,8 @@ If at any point you would like to delete a database, you can do so using the fol
 
 `db.deleteDatabase('foo');`
 
-**Returns:**
-*Success:* true
+**Returns:**  
+*Success:* true  
 *Error:* false with error message (console)
 
 <h2 id="createtable">Creating a Table</h2>
