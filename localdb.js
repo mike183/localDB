@@ -260,6 +260,7 @@ function localdb(db)
               for(i in where){
                 if(database[table].rows[row][i] == where[i]){
                   ismatch = 1;
+                  break;
                 }
               }
             }
