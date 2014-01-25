@@ -9,6 +9,7 @@ localDB and this manual are still under development therefore there could still 
 * [Installation](#installation)
 * [localDB Anatomy](#localdb-anatomy)
 * [Loading a Database](#loading-a-database)
+* [Deleting a Database](#deleting-a-database)
 * [Creating a Table](#creating-a-table)
 * [Deleting a Table](#deleting-a-table)
 * [Getting Table Meta Data](#getting-table-meta-data)
@@ -56,6 +57,19 @@ After you have included the javascript in your page, you will now need to load a
 
 **Returns:**  
 None
+
+<h2 id="deletedb">Deleting a Database</h2>
+If at any point you would like to delete a database, you can do so using the following function. If the database you are trying to delete doesn't exist, an error will be displayed in the browsers error console and the function will return false. The code to delete a database would like something like this:
+
+`db.deleteDatabase('database_name');`
+
+**Example:**
+
+`db.deleteDatabase('foo');`
+
+**Returns:**
+*Success:* true
+*Error:* false with error message (console)
 
 <h2 id="createtable">Creating a Table</h2>
 Now that you have loaded a database into memory. Let's create a table. localDB is a schemaless database system, this means that when creating a table in localDB you don't need to worry about defining any columns, all you need to define is the name of the table that you would like to create. To create a table in the database we just loaded, it would look something like this:
