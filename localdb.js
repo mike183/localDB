@@ -23,6 +23,21 @@ function localdb(db)
   };
   
   var localdb = {
+
+    /*
+      Delete Database
+    */
+    deleteDatabase: function(dbname){
+      
+      if(localStorage[dbname] !== undefined){
+        delete localStorage[dbname];
+        return true;
+      } else {
+        console.error('A database with the name "'+dbname+'" could not be found');
+        return false;
+      }
+
+    },
     
     /*
       Create Table
