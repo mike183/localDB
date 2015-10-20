@@ -1,7 +1,7 @@
 /*
   localDB © 2012 Michael Donaldson
   Simple localStorage Database
-  Version: 0.2.0
+  Version: 0.2.1
   
   License: MIT (http://opensource.org/licenses/MIT)
 */
